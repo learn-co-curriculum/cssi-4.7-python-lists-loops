@@ -127,6 +127,7 @@ Alternatively, we can declare a variable `names` which contains a list of our lo
 The _for_ loop syntax is similar for integers. 
 * Notice that in this example we also used string interpolation. 
 * This code will repeat for every integer in the range.
+
 ```
 for i in range(1, 4):
     print "I am looping and am currently on %d." % i
