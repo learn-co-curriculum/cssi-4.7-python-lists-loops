@@ -10,9 +10,7 @@ languages: python
 + Create a loop in python syntax
 
 #Motivation:
-When we learned Javascript, we raced through lots of techniques programmers use to represent and manipulate data. We learned arrays, conditionals, looping, functions, and objects really quickly, and we used them to do interesting things to webpages.
-
-Most of the techniques, though, don't only apply to javascript. Just like we can use the python interpreter like the javascript console, and just like we can do basic arithmetic and string operations in both languages, we can use python logic to solve problems. We'll look at the most frequently used data structures and techniques, and use them to tackle some interesting challenges.
+In this lesson you will learn how to create python's version of an array, a list. You will also learn how to use loops in your python code.
 
 #Lists
 A list is the most basic python data structure. It is a list of objects or values. The syntax for a list is a set of objects enclosed in brackets. To create an empty list, set a variable equal to empty brackets:
@@ -23,7 +21,7 @@ To create a list with some elements in it, just add the elements separated by co
 ```
 >>> groceries = ['Eggs', 'Milk','Butter']
 ```
-Accessing items in a list
+###Accessing items in a list
 List items have an index and are accessed like they were in javascript:
 
 ```
@@ -36,12 +34,8 @@ List items have an index and are accessed like they were in javascript:
 >>> groceries[1:]
 ['Milk', 'Butter']
 ```
-#Student Practice: Lists
-What would this print? Why?
-```
->>> groceries[0][3]
-```
-#Modifying a List
+
+###Modifying a List
 The easiest way to modify a list’s content is to just access the list element by its index (numerical place in the list) and use the assignment operator.
 ```
 >>> groceries
@@ -57,7 +51,7 @@ Another convenient way to modify a list is the append() method. The append metho
 ['Bread', 'Milk', 'Butter', 'Asparagus']
 ```
 
-#List Methods
+###List Methods
 Using the len function, you can return the number of items in a list:
 ```
 >>> print len(groceries)
@@ -65,13 +59,10 @@ Using the len function, you can return the number of items in a list:
 ```
 Here are some other list methods that will come in handy:
 ```
-groceries.append('Asparagus')
-['Bread', 'Milk', 'Butter', 'Asparagus']
-
 groceries.extend(['Rutabaga', 'Ice Cream'])
 ['Bread', 'Milk', 'Butter', 'Asparagus','Rutabaga', 'Ice Cream']
 
-del groceries[3]
+del groceries[3] #removes 'Asparagus' from the list
 ['Bread', 'Milk', 'Butter','Rutabaga', 'Ice Cream']
 
 groceries.remove('Rutabaga')
@@ -81,7 +72,7 @@ groceries.sort()
 ['Bread', 'Butter', 'Ice Cream', 'Milk']
 ```
 
-# 'In' and 'Not' Operator
+### 'In' and 'Not' Operator
 What if you have a list of groceries and you want to check if ‘apples’ is in that list? Or a list of names and you want to check to see if someone is present? Use the 'in' operator.
 ```
 if 'albert' in students:
@@ -95,7 +86,7 @@ if 'albert' not in students:
  print 'where is albert?!'
 ```
 
-#range(): building lists of numbers easily
+###range(): building lists of numbers easily
 It is frequently useful to be able to generate a list of numbers. Rather than have you type out all the numbers you want, Python makes this easy:
 ```
 >>> print range(0,10)
@@ -111,10 +102,10 @@ Computers, as we've been learning, aren't that clever. However, they can do simp
 
 
 
-#For Loops
+###For Loops
 The simplest looping situation is where you need to do something _for_ a certain number of times. To do this, Python uses a for loop.
 
-## Example 1: Looping Through a List
+##### Example 1: Looping Through a List
 
 
 This code will repeat for every element in the list.
@@ -133,7 +124,7 @@ Alternatively, we can declare a variable `names` which contains a list of our lo
 	for name in names:
 	    print name
 ```
-## Example 2: Looping through Integers
+##### Example 2: Looping through Integers
 
 The _for_ loop syntax is similar for integers. 
 * Notice that in this example we also used string interpolation. 
@@ -147,9 +138,9 @@ my_range = range(1,4)
 for i in my_range:
     print "I am looping and am currently on %d." % i    
 ```
-#While Loops
+###While Loops
 While loops continue to repeat _while_ - or as long as - a certain condition is met. A while loop has a block of code and a condition.
-### Example 1: A Simple While Loop
+##### Example 1: A Simple While Loop
 This code will repeat while the condition `n<5` is met. It will stop when n is equal to 5.
 
 ```
@@ -158,7 +149,7 @@ while n < 5:
    print n
    n = n + 1	
 ```
-### Example 2: A While/Else Loop
+##### Example 2: A While/Else Loop
 This code is similar to the first _while_ loop example, except that there is an `else` statement. Once the condition `n<5` is not met, the instructions in the `else` block are executed. Then, the entire _while_ loop is exited, and the next instruction (to print `"You counted to 5"`) is executed.
 ```
 n = 0
