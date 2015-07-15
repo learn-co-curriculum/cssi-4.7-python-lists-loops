@@ -98,9 +98,7 @@ Generally, ranges have the form:
 `range(<start_int>, <end_int>, <interval>)`
 
 #Loops
-Computers, as we've been learning, aren't that clever. However, they can do simple things really really fast. It makes sense that some of the most powerful things we do with computers, we do in a loop. Loops let us repeat a section of code over and over, even if we only type it out once. In javascript, we saw how to use loops to iterate through an array. We can do the same thing in python, stepping through each element in a list and doing something with it.
-
-
+Loops let us repeat a section of code over and over, even if we only type it out once. 
 
 ###For Loops
 The simplest looping situation is where you need to do something _for_ a certain number of times. To do this, Python uses a for loop.
