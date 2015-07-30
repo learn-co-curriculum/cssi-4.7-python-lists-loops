@@ -1,8 +1,4 @@
----
-tags: cssi, lists, loops
-level: 2
-languages: python
----
+
 #Python Lists and Loops
 
 #Objectives:
