@@ -159,3 +159,5 @@ print "You counted to 5"
 
 #Conclusion
 Creating, modifying and accessing lists are important for every programmer, as is being able to use _for_ loops and _while_ loops. Practicing these small examples are a great way to build your foundation as a strong developer.
+
+<a href='https://learn.co/lessons/cssi-4.7-python-lists-loops' data-visibility='hidden'>View this lesson on Learn.co</a>
